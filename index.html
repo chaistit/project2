@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Wash Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+        .service-card {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+        .service-card p {
+            margin-bottom: 1.5rem;
+        }
+        .service-card button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .booking-form {
+            background: #fff;
+            padding: 2rem;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form input,
+        .booking-form select,
+        .booking-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+        }
+        .booking-form button {
+            background-color: #333;
+            color: white;
+            padding: 0.75rem;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>QuickClean Car Wash</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Basic Wash</h3>
+                <p>Exterior wash, rinse, and dry.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="service-card">
+                <h3>Deluxe Wash</h3>
+                <p>Includes exterior wash, interior vacuum, and window cleaning.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="service-card">
+                <h3>Premium Wash</h3>
+                <p>Full exterior and interior cleaning with polish and wax.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Car Wash</h2>
+        <form class="booking-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="basic">Basic Wash</option>
+  
